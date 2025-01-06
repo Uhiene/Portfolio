@@ -2,8 +2,8 @@ import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-ash1 pt-10 pb-20 px-24">
-      <div className="flex justify-between items-center">
+    <footer className="border-t border-ash1 p-6 py-10 lg:pt-10 lg:pb-20 lg:px-24">
+      <div className="flex flex-row justify-between items-center">
         {/* Copyright Section */}
         <div className="text-ash3 font-extralight">
           <span>
@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Back to Top Link */}
         <div>
           <a
-            className="text-ash3 text-5xl"
+            className="text-ash3 text-4xl lg:text-5xl"
             title="Back to Top"
             href="#"
             onClick={(e) => {

@@ -15,7 +15,7 @@ const ProjectCard = ({ imageSrc, imageAlt, category, title, projectLink }) => {
       </div>
 
       {/* Details Section */}
-      <div className="relative w-full pt-4 border-t border-ash1 hidden md:block">
+      <div className="relative w-full pt-4 border-t border-ash1 hidden lg:block">
         {/* Static Border */}
         <div className="absolute top-0 left-0 w-full h-[0.5px] bg-ash1"></div>
 
