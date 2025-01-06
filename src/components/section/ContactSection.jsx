@@ -16,10 +16,10 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-start mt-28">
+      <div className="flex flex-col lg:flex-row gap-10 justify-between items-start mt-28">
         <div>
           <ReusableHeading text="Reach me at" />
-          <div className="text-ash3 font-thin block space-y-2 font-sans text-2xl mt-4">
+          <div className="text-ash3 font-thin block lg:space-y-2 font-sans text-lg md:text-2xl mt-2 lg:mt-4">
             <a href="mailto:sayhello@luther.com">princessuhiene@gmail.com</a>
             <p>+234 812 408 1499</p>
           </div>
@@ -28,7 +28,7 @@ const ContactSection = () => {
         {/* Social Links */}
         <div>
         <ReusableHeading text="Social" />
-          <ul className="text-ash3 font-thin flex items-center gap-2 font-sans text-2xl mt-4">
+          <ul className="text-ash3 font-thin flex items-center gap-2 font-sans  text-lg md:text-2xl mt-2 lg:mt-4">
             <li>
               <a href="https://www.linkedin.com/in/princess-uhiene-399470198/">
                 LinkedIn
@@ -44,7 +44,7 @@ const ContactSection = () => {
         </div>
 
         {/* Say Hello Button */}
-        <div className="w-1/4" >
+        <div className="w-full md:w-1/4" >
           <a href="mailto:princessuhi@gmail.com" >
           <Button text="Say Hello." width="100%" />
           </a>
