@@ -18,8 +18,8 @@ const Preloader = () => {
   }
 
   return (
-    <div id="preloader">
-      <div id="loader"></div>
+    <div className="fixed inset-0 flex justify-center items-center bg-[#141516] z-50 opacity-100">
+      <div className="w-6 h-6 bg-white rounded-full animate-ping"></div> {/* Fixed size circle */}
     </div>
   );
 };
