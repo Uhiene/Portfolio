@@ -1,22 +1,22 @@
-import React from "react";
+import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Footer = () => {
-
   return (
-    <footer className="s-footer">
-      <div className="row">
+    <footer className="border-t border-ash1 pt-10 pb-20 px-24">
+      <div className="flex justify-between items-center">
         {/* Copyright Section */}
-        <div className="column ss-copyright">
+        <div className="text-ash3 font-extralight">
           <span>
-            © {new Date().getFullYear()} Princess. All rights reserved.
+            © {new Date().getFullYear()} Princess. All rights reserved. 
           </span>
-          <span>
-            Built with ❤️ by 
+          <span className="ml-2">
+             Built with ❤️ by
             <a
               href="https://codeduchess.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{marginLeft: "8px"}}
+              style={{ marginLeft: "8px" }}
+              className="text-ash"
             >
               Princess
             </a>
@@ -24,16 +24,20 @@ const Footer = () => {
         </div>
 
         {/* Back to Top Link */}
-        <div className="ss-go-top">
-          <a className="smoothscroll" title="Back to Top" href="#top">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            >
-              <path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-            </svg>
+        <div>
+          <a
+            className="text-ash3 text-5xl"
+            title="Back to Top"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
+            <IoIosArrowRoundUp />
           </a>
         </div>
       </div>

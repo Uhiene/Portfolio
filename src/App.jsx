@@ -1,28 +1,26 @@
-import React from 'react'
-import Preloader from './components/preloader'
-import PageWrap from './components/PageWrap'
-import Header from './components/Header'
+import Preloader from "./components/preloader";
+import PageWrap from "./components/PageWrap";
 
-import IntroSection from './components/IntroSection'
-import AboutSection from './components/AboutSection'
-import Works from './components/Works'
-import ContactSection from './components/ContactSection'
-import useSmoothScroll from './components/useSmoothScroll'
+import useSmoothScroll from "./components/useSmoothScroll";
+
+import MyWorks from "./components/section/MyWorks";
+import HeroSection from "./components/Section/HeroSection";
+import AboutSection from "./components/Section/AboutSection";
+import ContactSection from "./components/section/ContactSection";
 
 const App = () => {
   useSmoothScroll();
   return (
     <div>
-      <Preloader/>
-      <PageWrap>
-        <Header/>
-        <IntroSection/>
-        <AboutSection/>
-        <Works/>
-        <ContactSection/>
+      <Preloader />
+        <PageWrap>
+        <HeroSection />
+        <AboutSection />
+        <MyWorks />
+        <ContactSection />
       </PageWrap>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
