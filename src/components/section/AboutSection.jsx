@@ -24,9 +24,10 @@ const AboutSection = () => {
       </motion.div>
 
       {/* About Text */}
-      <ReusableMotion delay={3} duration={1.5}
+      <ReusableMotion
+        delay={3}
+        duration={1.5}
         className="lg:w-1/2 md:w-full mt-8 lg:mt-0 lg:absolute inset-x-[47%] top-1/4"
-        delay={1.5}
       >
         <div>
           <ReusableMotion className="flex gap-3 lg:gap-5" delay={2}>

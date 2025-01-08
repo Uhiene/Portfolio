@@ -52,15 +52,15 @@ const Experiences = () => {
           <h3 className="vertical-timeline-element-title font-medium text-lg">
             Frontend Developer
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle font-extralight">
             Sate Consult | Accra Ghanna (Remote)
           </h4>
-          <p>
+          <h4 className="vertical-timeline-element-subtitle text-base font-light mt-2">
             Developed web interfaces with React, JavaScript, and Tailwind CSS,
             conducted usability testing to enhance user experience, and
             collaborated with senior developers to deliver SEO-friendly
             solutions.
-          </p>
+          </h4>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work font-sans "
@@ -72,10 +72,10 @@ const Experiences = () => {
           <h3 className="vertical-timeline-element-title font-medium text-lg">
             Web Developer Intern
           </h3>
-          <h3 className="vertical-timeline-element-title">
+          <h3 className="vertical-timeline-element-title font-extralight text-gray-950">
             White Creativity | Port Harcourt, Nigeria (On-site)
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle text-base font-light mt-2 text-gray-950">
             Developed responsive websites, collaborated with teams, and
             implemented client-focused solutions using modern web technologies.
           </h4>

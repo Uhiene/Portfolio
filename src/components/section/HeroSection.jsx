@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../hero/Header'
+import Header from '../layout/Header'
 import IntroSection from '../hero/IntroSection'
 
 const HeroSection = () => {

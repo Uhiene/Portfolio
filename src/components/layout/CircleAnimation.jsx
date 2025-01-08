@@ -8,7 +8,7 @@ const Container = styled.div`
   justify-content: center;
   height: 100vh;
 `;
-const StaggeredAnimation = () => {
+const CircleAnimation = () => {
     const containerVariants = {
       hidden: { opacity: 0 },
       visible: {
@@ -46,4 +46,4 @@ const StaggeredAnimation = () => {
     );
   };
 
-export default StaggeredAnimation
+export default CircleAnimation

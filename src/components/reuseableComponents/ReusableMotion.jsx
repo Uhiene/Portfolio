@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ReusableMotion = ({
   children,
-  initialY = "100vh",
+  initialY = "30vh",
   initialOpacity = 0,
   animateY = 0,
   animateOpacity = 1,

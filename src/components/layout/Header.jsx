@@ -64,7 +64,7 @@ const Header = () => {
           menuOpen ? "max-h-screen" : "max-h-0"
         } overflow-hidden lg:max-h-none lg:flex flex-col lg:flex-row lg:items-center lg:justify-center w-full bg-transparent transition-all duration-300 ease-out`}
       >
-        <ul className="flex flex-col lg:flex-row lg:items-center lg:justify-center w-full bg-transparent">
+        <ul className="flex flex-col lg:flex-row lg:items-center lg:justify-center w-full bg-transparent cursor-pointer">
           {sections.map((section, index) => (
             <li
               key={index}
