@@ -8,6 +8,7 @@ import AboutSection from "./components/Section/AboutSection";
 import ContactSection from "./components/section/ContactSection";
 import { useEffect } from "react";
 import PageWrap from "./components/layout/PageWrap";
+import Experiences from "./components/myworks/Experiences";
 
 const App = () => {
   useSmoothScroll();
@@ -21,6 +22,7 @@ const App = () => {
         <PageWrap>
         <HeroSection />
         <AboutSection />
+        <Experiences/>
         <MyWorks />
         <ContactSection />
       </PageWrap>

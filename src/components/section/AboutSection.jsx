@@ -19,7 +19,7 @@ const AboutSection = () => {
           src="/images/about-photo.jpg"
           srcSet="/images/about-photo.jpg 1x, /images/about-photo@2x.jpg 2x"
           alt="Princess"
-          className="object-cover w-full h-auto"
+          className="object-cover w-full h-auto filter grayscale"
         />
       </motion.div>
 
