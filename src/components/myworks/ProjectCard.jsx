@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectCard = ({ imageSrc, imageAlt, category, title, projectLink }) => {
   return (
-    <div id="works" className="flex gap-8 w-full hover:cursor-pointer group">
+    <div className="flex gap-8 w-full hover:cursor-pointer group">
       {/* Image Section */}
       <div className="relative w-full lg:w-56 h-40 group overflow-hidden">
         <img
