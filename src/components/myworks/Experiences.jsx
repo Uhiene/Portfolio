@@ -5,18 +5,18 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ReusableMotion from "../reuseableComponents/ReusableMotion";
+import SectionHeader from "../reuseableComponents/SectionHeader";
 
 const Experiences = () => {
   return (
     <div className="p-6 lg:p-24">
       <ReusableMotion delay={3} duration={1.5} className="mb-10">
-        <h2 className="uppercase text-xs lg:text-base tracking-[5px] font-light text-white font-sans">
-          Expertise
-        </h2>
-        <p className="font-serif font-medium text-2xl lg:text-5xl text-white mt-4 lg:mt-8 leading-tight">
-         Frontend Developer, React Expert, NextJs, Tutor, Technical Writer
-        </p>
+        <SectionHeader
+          title="Expertise"
+          subtitle="Frontend Developer, React Expert, NextJs, Tutor, Technical Writer"
+        />
       </ReusableMotion>
+
       <VerticalTimeline lineColor="#5B5B5C">
         <VerticalTimelineElement
           className="vertical-timeline-element--work font-sans"
@@ -81,15 +81,13 @@ const Experiences = () => {
           </h4>
         </VerticalTimelineElement>
       </VerticalTimeline>
-      <ReusableMotion delay={3} duration={1.5} className="mt-14">
-        <h2 className="uppercase text-xs lg:text-base tracking-[5px] font-light text-white font-sans">
-          Education
-        </h2>
-        <p className="font-serif font-medium text-2xl lg:text-5xl text-white mt-4 leading-tight">
-         University of Port Harcourt
-        </p>
-        <p className="font-sans text-lg text-white">
-        Bachelor's Degree in Computer Science 2018 - 2024
+      <ReusableMotion delay={0.3} duration={1.5} className="mt-14">
+        <SectionHeader
+          title="Education"
+          subtitle="University of Port Harcourt"
+        />
+        <p className="font-sans text-lg text-white font-extralight mt-1">
+          Bachelor's Degree in Computer Science 2018 - 2024
         </p>
       </ReusableMotion>
     </div>

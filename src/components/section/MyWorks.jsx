@@ -5,10 +5,13 @@ import ReusableMotion from "../reuseableComponents/ReusableMotion";
 import { motion } from "framer-motion";
 import ArticleCard from "../myworks/ArticleCard";
 import TutorialCard from "../myworks/Tutorialcard";
+import SectionHeader from "../reuseableComponents/SectionHeader";
 
 const TabButton = ({ label, activeTab, setActiveTab }) => (
   <button
-    className={`py-2 px-4 ${activeTab === label ? "bg-gold text-white" : "bg-ash1 text-ash"} rounded font-sans text-base`}
+    className={`py-2 px-4 ${
+      activeTab === label ? "bg-gold text-white" : "bg-ash1 text-ash"
+    } rounded font-sans text-base`}
     onClick={() => setActiveTab(label)}
   >
     {label.charAt(0).toUpperCase() + label.slice(1)}
@@ -55,33 +58,61 @@ const MyWorks = () => {
   const renderContent = () => {
     switch (activeTab) {
       case "works":
-        return <ContentGrid items={projects} Component={ProjectCard} gridClass="grid grid-cols-2" />;
+        return (
+          <ContentGrid
+            items={projects}
+            Component={ProjectCard}
+            gridClass="grid grid-cols-2"
+          />
+        );
       case "articles":
-        return <ContentGrid items={articles} Component={ArticleCard} gridClass="grid grid-cols-2 lg:grid-cols-5" />;
+        return (
+          <ContentGrid
+            items={articles}
+            Component={ArticleCard}
+            gridClass="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5"
+          />
+        );
       case "tutorials":
-        return <ContentGrid items={tutorials} Component={TutorialCard} gridClass="grid grid-cols-2 lg:grid-cols-5" />;
+        return (
+          <ContentGrid
+            items={tutorials}
+            Component={TutorialCard}
+            gridClass="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5"
+          />
+        );
       default:
         return null;
     }
   };
 
   return (
-    <section id="works" className="p-6 lg:p-16 lg:px-24 min-h-screen">
+    <section id="works" className="p-6 lg:p-16 lg:px-24 lg:min-h-screen">
       <div>
-        <ReusableMotion delay={3} duration={1.5}>
-          <h2 className="uppercase text-xs lg:text-base tracking-[5px] font-light text-white font-sans">
-            My Portfolio
-          </h2>
-          <p className="font-serif font-medium text-2xl lg:text-5xl text-white mt-4 leading-tight">
-            Here are some of my favorite projects I have done lately. Feel free
-            to explore my projects, articles, and tutorials.
-          </p>
+        <ReusableMotion delay={0.2} duration={1.5}>
+          <SectionHeader
+            title="My Portfolio"
+            subtitle=" Here are some of my favorite projects. Feel free
+            to explore my projects, articles, and tutorials."
+          />
         </ReusableMotion>
 
         <div className="flex space-x-4 mt-8">
-          <TabButton label="works" activeTab={activeTab} setActiveTab={setActiveTab} />
-          <TabButton label="articles" activeTab={activeTab} setActiveTab={setActiveTab} />
-          <TabButton label="tutorials" activeTab={activeTab} setActiveTab={setActiveTab} />
+          <TabButton
+            label="works"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <TabButton
+            label="articles"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <TabButton
+            label="tutorials"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
         </div>
 
         {renderContent()}

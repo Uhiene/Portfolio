@@ -5,18 +5,8 @@ import Button from "../reuseableComponents/Button";
 const ContactSection = () => {
   return (
     <section id="contact" className="p-6 lg:p-24">
-      <div>
-        <div>
-          <ReusableHeading text="Get In Touch" />
-          <p className="font-serif font-medium text-2xl lg:text-5xl text-white mt-4 lg:mt-8 leading-tight">
-            I&apos;d love to hear from you! Whether you have a question, need
-            assistance, or just want to discuss your project ideas, feel free to
-            drop me a message.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col lg:flex-row gap-10 justify-between items-start mt-28">
+      
+      <div className="flex flex-col lg:flex-row gap-10 justify-between items-start">
         <div>
           <ReusableHeading text="Reach me at" />
           <div className="text-ash3 font-thin block lg:space-y-2 font-sans text-lg md:text-2xl mt-2 lg:mt-4">
