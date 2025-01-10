@@ -86,19 +86,19 @@ export const tutorials = [
   },
   {
     id: 2,
-    title: "Advanced React Patterns",
+    title: "HTML & CSS Responsive Animations WebApp",
     articlelink: "https://youtu.be/Ou9CJQgyXB0?si=IDs84vvzpBSZBiO3",
     imageSrc: "/images/portfolio/tutorials/video2.png",
   },
   {
     id: 3,
-    title: "Framer Motion: Animation Made Easy",
+    title: "Fully Responsive Professional Website",
     articlelink: "#",
     imageSrc: "/images/portfolio/tutorials/video3.png",
   },
   {
     id: 4,
-    title: "Introduction to Tailwind CSS",
+    title: "PayScan: Responsive Payment Landing Page",
     articlelink: "https://youtu.be/vwSaSlxQ-mo?si=hE_JQfPvG2vOZqEL",
     imageSrc: "/images/portfolio/tutorials/video4.png",
   },
