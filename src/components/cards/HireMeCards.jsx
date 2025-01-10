@@ -24,7 +24,7 @@ const HireMeCards = () => {
             on Upwork!
           </p>
           <a
-            href="https://www.upwork.com/freelancers/your-profile"
+            href="https://www.upwork.com/freelancers/~01ebf70f02e8ce1c73"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block py-2 px-6 bg-green-400 text-white hover:bg-green-500 transition"
@@ -38,7 +38,7 @@ const HireMeCards = () => {
           <h3 className="text-xl font-bold mb-4">Hire Me to Teach You</h3>
           <h3 className="text-4xl font-bold mb-4">$25/hr</h3>
           <p className="text-gray-300 mb-6">
-            Want to learn frontend development or master your skills? I can
+            Want to learn frontend development ? I can
             guide you step by step!
           </p>
           <a

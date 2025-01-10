@@ -51,12 +51,11 @@ const AboutSection = () => {
             </p>
             <div className="sm:w-1/2">
               <a
-                href="/docs/PrincessUhieneCV.pdf"
+                href="/public/docs/PrincessUhieneCV.pdf"
                 download="PrincessUhieneCV.pdf"
-                className="inline-block p-6 text-gold bg-ash1 font-sans font-medium uppercase text-xs tracking-[5px] text-center hover:bg-white hover:text-black transition duration-200"
-                style={{ width: "100%" }}
+                className="block"
               >
-                Download CV
+                <Button text="Download CV" width="100%" />
               </a>
             </div>
           </ReusableMotion>

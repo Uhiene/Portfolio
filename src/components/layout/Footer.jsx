@@ -7,26 +7,19 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="text-ash3 font-extralight">
           <span>
-            © {new Date().getFullYear()} Princess. All rights reserved. 
+            © {new Date().getFullYear()} Princess. All rights reserved.
           </span>
-          <span className="ml-2">
-             Built with ❤️ by
-            <a
-              href="https://codeduchess.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ marginLeft: "8px" }}
-              className="text-ash"
-            >
-              Princess
-            </a>
+          <span className="mx-2">
+            Built with ❤️ by
+            
           </span>
+          <span className="text-gray-400">Princess</span>
         </div>
 
         {/* Back to Top Link */}
         <div>
           <a
-            className="text-ash3 text-4xl lg:text-5xl"
+            className="text-ash3 text-4xl lg:text-5xl hover:text-gold transition-colors duration-300"
             title="Back to Top"
             href="#"
             onClick={(e) => {

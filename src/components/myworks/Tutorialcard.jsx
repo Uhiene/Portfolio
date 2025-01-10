@@ -9,7 +9,7 @@ const Tutorialcard = ({ articlelink, imageSrc, title }) => {
           alt={title}
           className="w-full h-40 object-center"
         />
-        <div className="p-1 lg:p-3">
+        <div className="p-1 lg:p-3 h-16">
           <h3 className="text-sm lg:text-base font-sans font-medium hover:underline line-clamp-2">{title}</h3>
         </div>
       </a>
